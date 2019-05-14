@@ -1,4 +1,4 @@
 package bankaccountapp;
 
-public abstract class Account {
+public abstract class Account implements IBaseRate {
 }
