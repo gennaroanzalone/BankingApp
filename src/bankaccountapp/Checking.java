@@ -13,4 +13,8 @@ public class Checking extends Account {
     }
 
     // List any methods specific to the checking account
+    public void showInfo(){
+        super.showInfo();
+        System.out.println("ACCOUNT TYPE: CHECKING");
+    }
 }
