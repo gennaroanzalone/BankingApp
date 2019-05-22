@@ -6,9 +6,9 @@ public class Savings extends Account {
     int getSafetyDepositBoxKey;
 
     // Constructor to initialize setting for the savings properties
-    public Savings(String name) {
-        super(name);
-        System.out.println("SAVINGS ACCOUNT");
+    public Savings(String name, String sSn, double initDeposit) {
+        super(name, sSn, initDeposit);
+        System.out.println("ACCOUNT TYPE: SAVINGS");
     }
     // list any methods specific to savings account
 }
