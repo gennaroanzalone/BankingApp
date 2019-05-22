@@ -6,8 +6,7 @@ public class Checking extends Account {
     // Constructor to initialize checking account properties
     public Checking(String name) {
         super(name);
-        System.out.println("NEW CHECKING ACCOUNT");
-        System.out.println("NAME: " + name);
+        System.out.println("CHECKING ACCOUNT");
     }
 
     // List any methods specific to the checking account

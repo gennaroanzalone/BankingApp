@@ -5,6 +5,8 @@ public class BankAccountApp {
 
         Checking chkacc1 = new Checking("Tom Wilson");
 
+        Savings savacc1 = new Savings("Rich Lowe");
+
 
         // Read a CSV file then create new account based on that data
 
