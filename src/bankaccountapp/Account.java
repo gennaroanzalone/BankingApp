@@ -6,6 +6,7 @@ public abstract class Account implements IBaseRate {
     String sSN;
     double balance;
 
+    static int index = 10000;
     String accountNumber;
     double rate;
 
@@ -18,13 +19,15 @@ public abstract class Account implements IBaseRate {
         System.out.println("NAME: " + name + "\nSSN: " + sSn + "\nBALANCE: $" + balance);
 
         // set account number
+        index++;
         this.accountNumber = setAccountNumber();
         System.out.println("ACCOUNT NUMBER " + this.accountNumber);
     }
 
     private String setAccountNumber(){
         String lastTwoOfSSN = sSN.substring(sSN.length()-2);
-        return lastTwoOfSSN;
+        int uniqueID = index;
+        return lastTwoOfSSN + uniqueID;
     }
 
     // List common methods
