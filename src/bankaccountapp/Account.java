@@ -22,9 +22,14 @@ public abstract class Account implements IBaseRate {
         this.accountNumber = setAccountNumber();
 
         // get base rate
-        getBaseRate();
-        System.out.println(getBaseRate());
+//        getBaseRate();
+//        System.out.println(getBaseRate());
+
+        setRate();
     }
+
+    public abstract void setRate();
+
 
     private String setAccountNumber(){
         String lastTwoOfSSN = sSN.substring(sSN.length()-2);
