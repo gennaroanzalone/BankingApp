@@ -14,7 +14,7 @@ public class Savings extends Account {
 
     @Override
     public void setRate() {
-        System.out.println("Implement rate for savings");
+        rate = getBaseRate() - .25;
     }
 
     private void setSafetyDepositBox(){
